@@ -1,0 +1,17 @@
+**/*~
+auto/
+
+*.aux
+*.log
+*.out
+*.pdf
+
+.vscode
+
+*.DS_Store
+
+raytracer/obj
+
+raytracer/raytracer
+**/*.png
+**/*.ppm

@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>CS440: Team Vector Raytracer</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+    <!--
+Tooplate 2119 Gymso Fitness
+https://www.tooplate.com/view/2119-gymso-fitness
+-->
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Computer Graphics<span style="color: #F48840;">.</span></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="#concept" class="nav-link smoothScroll">Concept</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#scene" class="nav-link smoothScroll">Scene</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#acceleration" class="nav-link smoothScroll">Acceleration Structure</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#schedule" class="nav-link smoothScroll">Code Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#shoulders" class="nav-link smoothScroll">Acknowledgement</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link smoothScroll">The Team</a>
+                    </li>
+                </ul>
+
+                <!-- <ul class="social-icon ml-lg-3">
+                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul> -->
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+
+        <div class="bg-overlay"></div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-md-10 mx-auto col-12">
+                    <div class="hero-text mt-5 text-center">
+
+                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="300">Way Back home </h6>
+
+                                <h6 data-aos="fade-up" data-aos-delay="500" style="color: #b894c9;">I just want to go home
+                            </h1>
+
+                            <a href="#concept" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600"
+                                style="color: #e5b7d0;">Scene Concept</a>
+
+                            <a href="#scene" class="btn custom-btn bordered mt-3" data-aos="fade-up"
+                                data-aos-delay="700">Scene Render</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="feature" id="concept">
+        <div class="container">
+            <div class="row">
+
+                <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-3 text-white" data-aos="fade-up">Scene Concept</h2>
+
+
+                    <p data-aos="fade-up" class="mb-4 text-white" data-aos-delay="200">For this project, we tried out a lot of ideas and they didn't work out despite us trying extremely hard. We felt like crying and... just wanted to feel safe. The place where we wanted to be was home.
+                        </p>
+                        <p data-aos="fade-up" class="mb-4 text-white" data-aos-delay="200">
+                        This scene is a tribute to home. There is a song called “This house is not for sale”, which shares the feelings we have. Even if there is nowhere to run, we can always go home. The place where we are always welcome, regardless of what we achieved or failed to. It is the place “where memories live and my dreams don’t fail” and that is why precisely it can never be for sale.
+                        </p>
+                        <p data-aos="fade-up" class="mb-4 text-white" data-aos-delay="200">
+                        There ultimately comes a time in our lives when we are lost and have forgotten who we are and if you ever find yourself in that situation, I hope that you find your way back home. Your home isn’t necessarily something physical. It may be something abstract like a set of values that guide you. Again, It should never be something that you put for sale. It is who we are. We can’t exist without our home but our  home can exist without us.
+                        </p>
+                        <p data-aos="fade-up" class="mb-4 text-white" data-aos-delay="200">
+                        Lastly, we would like to acknowledge a home that is very dear to us. </p> 
+                        <p data-aos="fade-up" class="mb-4 text-white" data-aos-delay="200">
+                        <i>To the people, who I can call home:</i> Thank you, you mean more than the world to me. You are the shoulders I could rest on, and every time I pushed myself and it didn’t work out, what ever bond we had, got me through. We often neglect our homes, spending time on work but I hope that I never neglect you. I hope the time and effort we put in this scene serves as a visible reminder to us to always find our way home. There is no other place I would rather be.</p>
+
+                    <!-- <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm">Become a member today</a> -->
+                </div>
+
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+                    <div class="about-working-hours">
+                        <div>
+
+                            <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Scene Details</h2>
+
+                            <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Primitive Count:
+                                119,736 Primitives</strong>
+
+                            <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Low Resolution: 500×300
+                                px</strong>
+
+                            <p data-aos="fade-up" data-aos-delay="800">Render Time: 1.867 seconds</p>
+
+                            <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">High Resolution:
+                                1500×900 px</strong>
+
+                            <p data-aos="fade-up" data-aos-delay="800">Render Time: 15.803 seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <h1 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200" style="text-transform:none">Before the scene: The road of disappointments</h2>
+                    <p data-aos="fade-up" data-aos-delay="200">We initially wanted a scene that is set in a cherry blossom garden in Japan. It was supppsed to look like this: </p>
+                    </h1></div>
+            <div class="row">
+
+                    <!-- Make image responsive -->
+                <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200" style="text-transform:none">The Dream</h2>
+
+                    
+                    <img src="./images/Road to disappointments/render.png" class="img-fluid"
+                        alt="Contact" data-aos="fade-up" data-aos-delay="300">
+</div>
+<div class="row">
+
+                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200" style="text-transform:none">Started out with a tree</h2>
+
+                    
+                        <img src="./images/Road to disappointments/SingleTree.jpeg" class="img-fluid"
+                            alt="Contact" data-aos="fade-up" data-aos-delay="300">
+</div>
+<!-- <div class="row">
+
+                            <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200" style="text-transform:none">and then a few more trees... what could possibly go wrong...</h2>
+
+                    
+                            <img src="./images/Road to disappointments/MoreTrees.jpeg" class="img-fluid"
+                                alt="Contact" data-aos="fade-up" data-aos-delay="300">
+    
+</div>                                 -->
+<div class="row">
+                            <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200" style="text-transform:none">How did it end up like this: It was only a render, only a render</h2>
+
+                    
+                            <img src="./images/Road to disappointments/Chaos.jpeg" class="img-fluid"
+                                alt="Contact" data-aos="fade-up" data-aos-delay="300">
+    
+                    <!-- <img src="https://raytracing.github.io/images/img-1.21-book1-final.jpg" class="showcase"> -->
+                    <!-- <div class="ml-auto col-lg-5 col-md-6 col-12">
+                      <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
+
+                      <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                          <input type="text" class="form-control" name="cf-name" placeholder="Name">
+
+                          <input type="email" class="form-control" name="cf-email" placeholder="Email">
+
+                          <textarea class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
+
+                          <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
+                      </form>
+                  </div>
+
+                  <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                      <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find us</span></h2>
+
+                      <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> 120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil</p> -->
+                    <!-- How to change your own map point
+  1. Go to Google Maps
+  2. Click on your location point
+  3. Click "Share" and choose "Embed map" tab
+  4. Copy only URL and paste it within the src="" field below
+-->
+                    <!-- <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                         <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                      </div>
+                  </div>
+                   -->
+            </div>
+
+            <div class="row">
+
+                <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200" style="text-transform:none">Calm down... lets get back to step 1</h2>
+
+        
+                <img src="./images/Road to disappointments/TreeLight2.jpeg" class="img-fluid"
+                    alt="Contact" data-aos="fade-up" data-aos-delay="300">
+
+</div>  
+<div class="row">
+
+    <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200" style="text-transform:none">Some Area Light might help (Note that this scene contains over 500,000 primitives)</h2>
+
+
+    <img src="./images/AreaLight.png" class="img-fluid"
+        alt="Contact" data-aos="fade-up" data-aos-delay="300">
+
+</div>  
+<div class="row" id = "scene">
+    <h1 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200" style="text-transform:none">The actual scene</h2>
+        <p data-aos="fade-up" data-aos-delay="200">At this point, our desire to go home grew deeply and this scene is a visual depiction of that. In order to make the scene, we used our anti-aliasing raytracer which took 100 images and averages them. We placed 4 area lights. One at the sun, and the rest at 3 ends of the house boundary (excluding the bottom left boundary). The sun is of cosine material, while the house is of Phong Material. We added the coloring of the polygons ourselves.</p>
+        </h1></div>
+        <h4>Low Resolution Version (500x300) </h4>
+        <div>
+            <img src="./images/scene (low curved).png" class="img-fluid"/>
+        </div>
+        <h4>High Resolution Version (1500x900) </h4>
+        <div>
+            <img src="./images/scene (high curved).png" class="img-fluid"/>
+        </div>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+
+    <!-- CLASS -->
+    <section class="class section" id="class">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 text-center mb-5">
+                    <h6 data-aos="fade-up">The Visual Touches</h6>
+
+                    <h2 data-aos="fade-up" data-aos-delay="200">Image Features</h2>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/Simple.jpeg" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Baseline: Simple Sampler</h3>
+
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <p class="mt-3"><a href="images/Simple.jpeg" >Full Resolution</a></p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                    <div class="class-thumb">
+                        <img src="images/Regular.jpeg" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Anti-Aliasing: Regular Sampling</h3>
+
+                            <p class="mt-3"><a href="images/Regular.jpeg" >Full Resolution</a></p>
+
+                            <!-- <span class="class-price">$66</span> -->
+<!-- 
+                            <p class="mt-3">We also created a Random Sampler in order to solve the problem of anti-aliasing in scenes</p> -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                    <div class="class-thumb">
+                        <img src="images/Random.jpeg" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Anti-Aliasing: Random Sampling</h3>
+                            <p class="mt-3"><a href="images/Random.jpeg" >Full Resolution</a></p>
+
+
+
+                            <!-- <span class="class-price">$75</span> -->
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" style="margin-top: 2em;">
+                <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                    <div class="class-thumb">
+                        <img src="images/Jittered.jpeg" class="img-fluid" alt="Class">
+    
+                        <div class="class-info">
+                            <h3 class="mb-1">Anti-Aliasing: Jittered Sampling</h3>
+                            <p class="mt-3"><a href="images/Jittered.jpeg" >Full Resolution</a></p>
+
+    
+    
+                            <!-- <span class="class-price">$75</span> -->
+    
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/Flat Shading.jpeg" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Flat Shading</h3>
+
+                            <p class="mt-3"><a href="images/Flat Shading.jpeg" >Full Resolution</a></p>
+
+
+
+                            <!-- <span class="class-price">$50</span> -->
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/Smooth Shading.jpeg" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Smooth Shading</h3>
+                            <p class="mt-3"><a href="images/Smooth Shading.jpeg" >Full Resolution</a></p>
+
+
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">We added the ability to import a mesh and do a smooth rendering do get a better look</p> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" style="margin-top: 2em;">
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/Shiny,Glass,Transparent.png" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Shiny, Glass and Transparent Material*</h3>
+                            <p class="mt-3"><a href="images/Shiny,Glass,Transparent.png" >Full Resolution</a></p>
+
+
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Shams kuch batao</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/Point Light.png" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Point Light: Hello World (again)!*</h3>
+                            <p class="mt-3"><a href="images/Point Light.png" >Full Resolution</a></p>
+
+
+
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/DirectionalLightRecursive.png" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Directional Light with Recursive Tracer</h3>
+                            <p class="mt-3"><a href="images/DirectionalLightRecursive.png" >Full Resolution</a></p>
+
+
+                            <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="row" style="margin-top: 2em;">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                        <div class="class-thumb">
+                            <img src="images/DirectionalLightShadow.png" class="img-fluid" alt="Class">
+    
+                            <div class="class-info">
+                                <h3 class="mb-1">Directional Light with Shadow Tracer</h3>
+                                <p class="mt-3"><a href="images/DirectionalLightShadow.png" >Full Resolution</a></p>
+    
+    
+                                <!-- <span class="class-price">$50</span> -->
+    
+                                <!-- <p class="mt-3">Shams kuch batao</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                        <div class="class-thumb">
+                            <img src="images/AreaLight.png" class="img-fluid" alt="Class">
+    
+                            <div class="class-info">
+                                <h3 class="mb-1">Area Light</h3>
+                                <p class="mt-3"><a href="images/AreaLight.png" >Full Resolution</a></p>
+    
+    
+                                <!-- <span class="class-price">$50</span> -->
+    
+                                <!-- <p class="mt-3">Shams kuch batao</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                        <div class="class-thumb">
+                            <img src="images/LowResScene.png" class="img-fluid" alt="Class">
+    
+                            <div class="class-info">
+                                <h3 class="mb-1">Phong Shading</h3>
+                            <p class="mt-3"><a href="images/LowResScene.png" >Full Resolution</a></p>
+
+    
+                                <!-- <span><strong>Trained by</strong> - Bella</span> -->
+    
+                                <!-- <span class="class-price">$50</span> -->
+    
+                                <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 2em;">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                        <div class="class-thumb">
+                            <img src="images/Chapter14ReflectiveTransparent.png" class="img-fluid" alt="Class">
+    
+                            <div class="class-info">
+                                <h3 class="mb-1">Reflections with Transparency</h3>
+                                <p class="mt-3"><a href="images/Chapter14ReflectiveTransparent.png" >Full Resolution</a></p>
+    
+    
+                                <!-- <span class="class-price">$50</span> -->
+    
+                                <!-- <p class="mt-3">Shams kuch batao</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- SCHEDULE -->
+    <section class="schedule section" id="acceleration">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 text-center">
+                    <h6 data-aos="fade-up">Acceleration Structure: How fast can we get?</h6>
+
+                    <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Uniform Grid</h2>
+                </div>
+
+                <div class="col-lg-12 py-5 col-md-12 col-12">
+                    <table class="table table-bordered table-responsive schedule-table" data-aos="fade-up"
+                        data-aos-delay="300">
+
+                        <thead class="thead-light">
+                            <th></th>
+                            <th>Without Grid Time</th>
+                            <th>Without Grid RAM Usage(kbytes)</th>
+                            <th>With Grid Time</th>
+                            <th>With Grid RAM Usage(kbytes)</th>
+                            <!-- <th>Fri</th>
+                                         <th>Sat</th> -->
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><strong>1,000 primitives</strong></td>
+                                <td>
+                                    <strong>6.946 seconds</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>8,136</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>0.41 seconds</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>8,452</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <!-- <td>
+                                                <strong>Yoga Section</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td> -->
+                            </tr>
+
+                            <tr>
+                                <td><strong>10,000 primitives</strong></td>
+                                <td>
+                                    <strong>66.792 seconds</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>8,704</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>0.512 seconds</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>13,284</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+
+                                <!-- <td></td>
+                                            <td>
+                                                <strong>Cardio</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td> -->
+                            </tr>
+
+                            <tr>
+                                <td><strong>20,000 primitives</strong></td>
+                                <td>
+                                    <strong>133.622 seconds</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>9236</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>0.535 seconds</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>12,412</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+
+                                <!-- <td></td>
+                                            <td>
+                                                <strong>Crossfit</strong>
+                                                <span>5:00 pm - 7:00 pm</span>
+                                            </td> -->
+                            </tr>
+                            <tr>
+                                <td><strong>40,000 primitives</strong></td>
+                                <td>
+                                    <strong>266.496 seconds</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>10,936</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>0.629 seconds</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>17,356</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+
+                                <!-- <td></td>
+                                            <td>
+                                                <strong>Crossfit</strong>
+                                                <span>5:00 pm - 7:00 pm</span>
+                                            </td> -->
+                            </tr>
+
+                            <tr>
+                                <td><strong>100,000 primitives</strong></td>
+                                <td>
+                                    <strong>≈ 1 hour</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>14,447</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>0.817 seconds</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+                                <td>
+                                    <strong>32,008</strong>
+                                    <!-- <span>7:00 am - 9:00 am</span> -->
+                                </td>
+
+                                <!-- <td>
+                                                <strong>Body work</strong>
+                                                <span>11:50 am - 5:20 pm</span>
+                                            </td> -->
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/BuildTimes/1K.png" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">1,000 primitives</h3>
+
+                            <span><strong>With/Without</strong> Uniform Grid</span>
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/BuildTimes/10K.png" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">10,000 primitives</h3>
+
+                            <span><strong>With/Without</strong> Uniform Grid</span>
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/BuildTimes/20K.png" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">20,000 primitives</h3>
+
+                            <span><strong>With/Without</strong> Uniform Grid</span>
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row" style="margin-top: 2rem;">
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/BuildTimes/40K.png" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">40,000 Primitives</h3>
+
+                            <span><strong>With/Without</strong> Uniform Grid</span>
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/BuildTimes/100K.png" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">100,000 Primitives</h3>
+
+                            <span><strong>With/Without</strong> Uniform Grid</span>
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <img src="images/BuildTimes/1000K.png" class="img-fluid" alt="Class">
+
+                        <div class="class-info">
+                            <h3 class="mb-1">1,000,000 Primitives</h3>
+
+                            <span><strong>With/Without</strong> Uniform Grid</span>
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="class section" id="class">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 text-center mb-5">
+                    <h6 data-aos="fade-up">What can the tracer do?</h6>
+
+                    <h2 data-aos="fade-up" data-aos-delay="200">Code Features</h2>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <!-- <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Class"> -->
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Acceleration Structure: Uniform Grid</h3>
+
+                            <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                    <div class="class-thumb">
+                        <!-- <img src="images/class/crossfit-class.jpg" class="img-fluid" alt="Class"> -->
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Acceleration Structure: BVH</h3>
+
+                            <!-- <span><strong>Trained by</strong> - Mary</span> -->
+
+                            <!-- <span class="class-price">$66</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                    <div class="class-thumb">
+                        <!-- <img src="images/class/cardio-class.jpg" class="img-fluid" alt="Class"> -->
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Camera: Parallel & Perspective</h3>
+
+                            <!-- <span><strong>Trained by</strong> - Cathe</span> -->
+
+                            <!-- <span class="class-price">$75</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" style="margin-top: 2em;">
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <!-- <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Class"> -->
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Geometry: Triangles, Spheres, Smooth Triangles, "Compound"</h3>
+
+                            <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <!-- <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Class"> -->
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Lighting: Point Light, Area Light, Directional Light</h3>
+
+                            <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <!-- <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Class"> -->
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Material: Cosine, Transparent, Shiny, Phong</h3>
+
+                            <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" style="margin-top: 2em;">
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <!-- <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Class"> -->
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Multi-threading</h3>
+
+                            <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <!-- <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Class"> -->
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Mesh Loading</h3>
+
+                            <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="class-thumb">
+                        <!-- <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Class"> -->
+
+                        <div class="class-info">
+                            <h3 class="mb-1">Smooth Shading for meshes</h3>
+
+                            <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                            <!-- <span class="class-price">$50</span> -->
+
+                            <!-- <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        </div>
+    </section>
+
+        <!-- SCHEDULE -->
+        <section class="schedule section" id="schedule">
+            <div class="container">
+                <div class="row">
+    
+                    <div class="col-lg-12 col-12 text-center">
+                        <h6 data-aos="fade-up">Build the scenes yourselves! (just replace the build file) In order to use a different tracer, just change the tracer set in the build files. for example new BasicTracer() for the Basic tracer.</h6>
+    
+                        <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Build files</h2>
+                        <h4 class="text-white" data-aos="fade-up" data-aos-delay="200">Instruction: Be in the raytracer folder and run g++ main.cpp ./tracers/*.cpp ./utilities/*.cpp ./world/*.cpp ./cameras/*.cpp ./geometry/*.cpp ./materials/*.cpp ./samplers/*.cpp ./lights/*.cpp ./acceleration/*.cpp ./build/file.cpp  -fopenmp</h2>
+
+                        
+                    </div>
+    
+                    <div class="col-lg-12 py-5 col-md-12 col-12">
+                        <table class="table table-bordered table-responsive schedule-table" data-aos="fade-up"
+                            data-aos-delay="300">
+<!--     
+                            <thead class="thead-light">
+                                <!-- <th></th> -->
+                                <!-- <th>Build File</th> -->
+
+                                <!-- <th>Fri</th>
+                                             <th>Sat</th> -->
+                            <!-- </thead> -->
+                            <tbody>
+                                
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                <tr>
+                                    <td>
+                                        <strong>buildHelloWorld.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>buildHelloWorldJittered.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>buildHelloWorldRandom.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>buildHelloWorldRegular.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>buildFlatBunny.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+    
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>buildBalls.cpp (You can modify it to generate more balls)</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+    
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>BuildNewMvp.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>buildSmoothBunny.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+
+                                
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>buildTree.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>buildNewMVP.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>buildNewMVP2.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>buildHouse.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>buildChapter14Reflective.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- <td><strong>Scene 1</strong></td> -->
+                                    <td>
+                                        <strong>buildChapter14ReflectiveTransparent.cpp</strong>
+                                        <!-- <span>7:00 am - 9:00 am</span> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                </div>
+                
+            </div>
+        </section>
+    
+        <section class="class section" id="shoulders">
+            <div class="container">
+                <div class="row">
+    
+                    <div class="col-lg-12 col-12 text-center mb-5">
+                        <h6 data-aos="fade-up">The shoulders we stood on</h6>
+    
+                        <h2 data-aos="fade-up" data-aos-delay="200">Acknowledgements</h2>
+                        <h4 data-aos="fade-up" data-aos-delay="200">Ray Tracing from the Ground Up</h4>
+                        <h4 data-aos="fade-up" data-aos-delay="200">Wikipedia (Shading articles)</h4>
+                        <h4 data-aos="fade-up" data-aos-delay="200">Ray Tracing in One Weekend (It actually took more 😢)</h4>
+                        <h4 data-aos="fade-up" data-aos-delay="200"><a href="https://free3d.com/3d-model/house-61304.html">House Model</a></h4>
+                        <h4 data-aos="fade-up" data-aos-delay="200"><a href="https://www.turbosquid.com/3d-models/xfrogplants-weeping-cherry-prunus-pendula-3d-model-1737617">Cherry Blossom Tree Model</a></h4>
+                        <h4 data-aos="fade-up" data-aos-delay="200"><a href="https://www.cgtrader.com/free-3d-models/plant/grass/green-lawn-8d4341d7-6281-40e9-8872-d429512a3b3b">Grass Model</a></h4>
+
+                        <h4 data-aos="fade-up" data-aos-delay="200">HapPLY</h4>
+                        <h4 data-aos="fade-up" data-aos-delay="200"><a href="http://graphics.stanford.edu/data/3Dscanrep/?">Bunny Mesh</a></h4>
+                        
+                    </div>
+    
+    
+                </div>
+    
+    
+    
+    
+            </div>
+    
+            </div>
+        </section>
+
+        <section class="about section" id="team">
+            <div class="container">
+                <div class="row">
+                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Meet The Team</h2>
+                    <p data-aos="fade-up" data-aos-delay="400">Hello. We are 3 CS seniors at Habib University and this was
+                        our ray tracer project for Computer Graphics. Thanks for checking it out. We really appreciate it
+                        and hope you liked it.</p>
+                </div>
+                <div class="row">
+    
+                    <!-- <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+                                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">The Team</h2>
+    
+                                    <p data-aos="fade-up" data-aos-delay="400">You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.</p>
+    
+                                    <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow" href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">contact Tooplate</a> immediately. Thank you.</p>
+    
+                                </div> -->
+    
+                    <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+                        <div class="team-thumb">
+                            <div style="min-height: 250px;background-image: url('./images/m3.PNG'); background-size: cover;"
+                            ></div>
+                            <!-- <img src="./images/Shams.jpg" class="img-fluid" -->
+                                <!-- alt="Trainer"> -->
+    
+                            <div class="team-info d-flex flex-column">
+    
+                                <h3>Shams Arfeen</h3>
+                                <span>CS 2022</span>
+    
+                                <ul class="social-icon mt-3">
+                                    <!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
+                                    <li><a href="https://github.com/ShamsArfeen" class="fa fa-github"
+                                            style="font-size: 25px;"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
+                        <div class="team-thumb">
+                            <!-- <img src="./images/Fasih.jpeg" class="img-fluid"
+                                alt="Trainer"> -->
+                                <div style="min-height: 250px;background-image: url('./images/Fasih.jpeg'); background-size: cover;"
+                                ></div>
+                            <div class="team-info d-flex flex-column">
+    
+                                <h3>Fasih Hussain</h3>
+                                <span>CS 2022</span>
+    
+                                <ul class="social-icon mt-3">
+                                    <!-- <li><a href="#" class="fa fa-instagram"></a></li> -->
+                                    <li><a href="https://github.com/fasihhussain" class="fa fa-github"
+                                            style="font-size: 25px;"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="900">
+                        <div class="team-thumb">
+                            <!-- <img src="./images/Khubaib3.jpg" class="img-fluid"
+                                alt="Trainer"> -->
+                                <div style="min-height: 250px;background-image: url('./images/Khubaib3.jpg'); background-size: cover;"
+                                ></div>
+                            <div class="team-info d-flex flex-column">
+    
+                                <h3>Khubaib Kasbati</h3>
+                                <span>CS 2022</span>
+    
+                                <ul class="social-icon mt-3">
+                                    <!-- <li><a href="#" class="fa fa-instagram"></a></li> -->
+                                    <li><a href="https://github.com/khubaibkay37" class="fa fa-github"
+                                            style="font-size: 25px;"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="class section" id="class">
+            <div class="container">
+                <div class="row">
+    
+                    <div class="col-lg-12 col-12 text-center mb-5">
+
+                        <h2 data-aos="fade-up" data-aos-delay="200">A few words</h2>
+
+                        <p>Hello, you made it to the end. Thank you for reading so far. We really appreciate it. We would like to thank Dr. Waqar Saleem to teach the course. It was a fun experience. For transparency, I want to tell you that the renders with * have been done in a previous version of the code and since the structure changed, we can no longer create them in the new tracer. We implemented 3 new tracers in total: Recursive tracer, which traces recursively without shadows, shadow tracer to trace recursively with shadows and anti-aliasing tracer, which makes multiple images and averages them and recurses like the shadow tracer. If you want to create the renders marked as * image, there is a folder in the repository called reflections+refractions folder, where you can use the tracer to make them. The Instructions for generating them can be found in the raytracer.cpp file of that folder.
+                             </p>    
+                        
+                        
+                    </div>
+    
+    
+                </div>
+    
+    
+    
+    
+            </div>
+    
+            </div>
+        </section>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="ml-auto col-lg-4 col-md-5">
+                    <p class="copyright-text">Team Vector 2021
+
+                        <br>Design: <a href="https://www.tooplate.com">Tooplate</a>
+                    </p>
+                </div>
+
+                <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                    <!-- <p class="mr-4">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="#">hello@company.co</a>
+                        </p>
+
+                        <p><i class="fa fa-phone mr-1"></i> 111244622</p> -->
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form class="membership-form webform" role="form">
+                        <input type="text" class="form-control" name="cf-name" placeholder="John Doe">
+
+                        <input type="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com">
+
+                        <input type="tel" class="form-control" name="cf-phone" placeholder="123-456-7890"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                        <textarea class="form-control" rows="3" name="cf-message"
+                            placeholder="Additional Message"></textarea>
+
+                        <button type="submit" class="form-control" id="submit-button" name="submit">Submit
+                            Button</button>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="signup-agree">
+                            <label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the
+                                <a href="#">Terms &amp;Conditions</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
