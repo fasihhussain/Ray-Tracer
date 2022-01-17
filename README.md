@@ -71,7 +71,7 @@ The build files for all the scenes shown in the showcase are present in `/raytra
 |  20,000 primitives |            133.622           |             9,236            |           0.535           |           12,412          |
 |  40,000 primitives |            266.496           |            10,936            |           0.629           |           17,356          |
 | 100,000 primitives |             ~3600            |            14,447            |           0.817           |           32,008          |
-<hr><br>
+
 
 ## Samplers
 ### Simple Sample (Baseline)
