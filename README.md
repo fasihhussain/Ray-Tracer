@@ -24,7 +24,7 @@ The build files for all the scenes shown in the showcase are present in `/raytra
 ### Cherry Blossom Tree
 ![Cherry Blosson Tree](/Showcase/images/tree%20highres.png)
 
-### House Scene
+### House
 ![High Res House Scene](/Showcase/images/HouseScene.png)
 
 ## Features
